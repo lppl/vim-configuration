@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/xptemplate"]
 	path = .vim/bundle/xptemplate
 	url = https://github.com/vim-scripts/xptemplate.git
+[submodule ".vim/bundle/behat"]
+	path = .vim/bundle/behat
+	url = https://github.com/vim-scripts/behat.zip.git
