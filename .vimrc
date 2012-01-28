@@ -54,6 +54,7 @@ nnoremap ; :
 
 call pathogen#infect()
 syntax on
+colorscheme evening
 filetype plugin indent on
 
 if has("autocmd")
