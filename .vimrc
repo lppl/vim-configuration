@@ -26,8 +26,8 @@ set wildmenu
 set wildmode=list:longest,full
 set whichwrap=b,s,h,l,<,>,[,]
 set gdefault 
-set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
+"set list
+"set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 set shiftwidth=4
 set expandtab
@@ -42,6 +42,8 @@ map <C-K> <C-W>k<C-W>
 map <C-L> <C-W>l<C-W>
 map <C-H> <C-W>h<C-W>
 
+map <C-Q> <Esc>:qall!
+map <C-S> <Esc>:wi
 
 let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<cr>
