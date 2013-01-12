@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = https://github.com/wincent/Command-T.git
+[submodule ".vim/bundle/vim-twig"]
+	path = .vim/bundle/vim-twig
+	url = https://github.com/beyondwords/vim-twig.git
