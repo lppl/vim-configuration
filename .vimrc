@@ -6,6 +6,9 @@ scriptencoding utf-8
 " We need full power of vim
 set nocompatible
 
+" Colorscheme
+colo slate
+
 " We don't need backup files
 set nobackup
 set noswapfile
