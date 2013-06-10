@@ -37,7 +37,6 @@ set autoindent
 set smartindent
 
 " Makes vim liberal about quitting not saved buffer
-set hidden
 set showmode
 set cursorline
 
@@ -62,13 +61,6 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
-
-" Indementation
-nmap <C-[> <<
-nmap <C-]> >>
-vmap <C-[> <gv
-vmap <C-]> >gv
 
 
 " Shortcut to rapidly toggle `set list`
