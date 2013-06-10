@@ -6,6 +6,8 @@ Included libraries
 
 Managed by Tim Popes pathoten
 
+
+- Vim project    : https://github.com/amiorin/vim-project
 - XPTemplate     : https://github.com/vim-scripts/xptemplate
 - Behat.zip      : https://github.com/vim-scripts/behat.zip
 - Command-T      : https://github.com/wincent/Command-T

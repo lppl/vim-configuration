@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule ".vim/bundle/vim-project"]
+	path = .vim/bundle/vim-project
+	url = https://github.com/amiorin/vim-project
