@@ -58,6 +58,11 @@ set linebreak
 set showbreak=…
 command! -nargs=* Wrap set wrap linebreak nolist
 
+" Settings for VimClojure
+let g:clj_highlight_builtins=1      " Highlight Clojure's builtins
+let g:clj_paren_rainbow=1           " Rainbow parentheses'!
+
+let mapleader="\\"
 
 " Moving beetwin windows
 map <C-h> <C-w>h
@@ -67,26 +72,27 @@ map <C-l> <C-w>l
 
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+" nmap <leader>l :set list!<CR>
 
 
 " Those mappings can help while moving in wrapperd lines
-vmap <C-j> gj
-vmap <C-k> gk
-vmap <C-4> g$
-vmap <C-6> g^
-vmap <C-0> g^
-nmap <C-j> gj
-nmap <C-k> gk
-nmap <C-4> g$
-nmap <C-6> g^
-nmap <C-0> g^
+" vmap <C-j> gj
+" vmap <C-k> gk
+" vmap <C-4> g$
+" vmap <C-6> g^
+" vmap <C-0> g^
+" nmap <C-j> gj
+" nmap <C-k> gk
+" nmap <C-4> g$
+" nmap <C-6> g^
+" nmap <C-0> g^
 
 " Fast editing of .vimrc
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
 
 execute pathogen#infect()
+execute pathogen#helptags()
 
 
 function! <SID>StripTrailingWhitespaces()
@@ -104,7 +110,7 @@ endfunction
 
 if has("autocmd")
     " Enable file type detection
-    filetype on
+    filetype plugin indent on
 
     autocmd FileType make       setlocal ts=4 sts=4 sw=4 noexpandtab
     autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab
@@ -121,7 +127,10 @@ if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#FuzzyIndent = 1
+let g:vimclojure#WantNailgun = 0
 
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
