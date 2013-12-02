@@ -39,6 +39,9 @@ set ts=4 sts=4 sw=4 expandtab
 set autoindent
 set smartindent
 
+" Status line
+set laststatus=2
+
 " Makes vim liberal about quitting not saved buffer
 set showmode
 set cursorline
@@ -57,10 +60,6 @@ set nowrap
 set linebreak
 set showbreak=…
 command! -nargs=* Wrap set wrap linebreak nolist
-
-" Settings for VimClojure
-let g:clj_highlight_builtins=1      " Highlight Clojure's builtins
-let g:clj_paren_rainbow=1           " Rainbow parentheses'!
 
 let mapleader="\\"
 
@@ -107,6 +106,9 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
+" Terminal settings
+set t_Co=256 " this tells vim to use 256 colors... always
+
 
 if has("autocmd")
     " Enable file type detection
@@ -126,6 +128,11 @@ if has("autocmd")
     " Source .vimrc everytime its changed
     autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+
+
+" Settings for VimClojure
+let g:clj_highlight_builtins=1      " Highlight Clojure's builtins
+let g:clj_paren_rainbow=1           " Rainbow parentheses'!
 
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
