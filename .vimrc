@@ -6,6 +6,9 @@ scriptencoding utf-8
 " We need full power of vim
 set nocompatible
 
+" Colorscheme
+colo slate
+
 " We don't need backup files
 set nobackup
 set noswapfile
@@ -41,6 +44,8 @@ set laststatus=2
 
 " Makes vim liberal about quitting not saved buffer
 set showmode
+set cursorline
+
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
