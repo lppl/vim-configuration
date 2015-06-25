@@ -108,12 +108,8 @@ endfunction
 
 " Colorscheme
 set cursorline
-let g:solarized_termcolors=256
-let g:solarized_termtrans=0
 set t_Co=256 " this tells vim to use 256 colors... always
-set background=light
-colo solarized
-
+colo vividchalk
 
 
 if has("autocmd")
