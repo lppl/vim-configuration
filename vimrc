@@ -142,6 +142,9 @@ let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#FuzzyIndent = 1
 let g:vimclojure#WantNailgun = 0
 
+
+let g:CommandTFileScanner = "git"
+
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
