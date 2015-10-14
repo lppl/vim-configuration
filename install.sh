@@ -9,7 +9,7 @@ main() {
 
 install_vim_deps() {
 	sudo aptitude update -y
-	sudo aptitude install -y vim
+	sudo aptitude install -y vim build-essentials
 }
 
 link_vimfiles() {
@@ -23,15 +23,15 @@ install_vundle() {
 }
 
 install_command_t() {
-	sudo aptitude install -y vim-nox
-	PATH=$PWD
-	cd vim/bundle/Command-T/ruby/commnad-t/
+	sudo aptitude install -y vim-nox ruby-dev
+	CURRENT_PATH=$PWD
+	cd vim/bundle/Command-T/ruby/command-t/
 	ruby extconf.rb
 	make
-	cd $PATH
+	cd $CURRENT_PATH
 }
 
-main
+# main
 
 
 
