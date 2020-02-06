@@ -31,7 +31,7 @@ install_command_t() {
 	cd $CURRENT_PATH
 }
 
-# main
+main
 
 
 
